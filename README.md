@@ -1,1 +1,1 @@
-# This contains all the assignments and labs for app development in android
+# Android app development assignments and labs
