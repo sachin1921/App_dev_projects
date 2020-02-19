@@ -1,1 +1,1 @@
-"# App_dev_projects" 
+# This contains all the assignments and labs for app development in android
