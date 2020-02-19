@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weather>
+    <location
+        city="london"
+        temperature="12C"
+        weather="Rain" />
+    <location
+        city="Rome"
+        temperature="25C"
+        weather="Sunny" />
+    <location
+        city="New York"
+        temperature="15C"
+        weather="Cloudy" />
+
+    <location
+        city="New York"
+        temperature="15C"
+        weather="Cloudy" />
+
+    <location
+        city="New York"
+        temperature="15C"
+        weather="Cloudy" />
+
+    <location
+        city="New York"
+        temperature="4C"
+        weather="Cloudy" />
+</weather>

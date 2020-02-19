@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size of the pizza"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="149dp"
+            android:paddingTop="5dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="92dp">
+
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Round Pizza 6 slices - serves 3 people ($5.50)"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="75dp"
+                android:onClick="pizzaSize"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Round Pizza 8 slices - serves 4 people ($7.99)"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="75dp"
+                android:onClick="pizzaSize"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Round Pizza 10 slices - serves 5 people ($9.50)"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="75dp"
+                android:onClick="pizzaSize"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Round Pizza 12 slices - serves 6 people ($11.38)"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="75dp"
+                android:onClick="pizzaSize"></RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topping"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+<!--        <Spinner-->
+<!--            android:id="@+id/toppings"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="7dp"-->
+<!--            android:paddingBottom="7dp" />-->
+        <Button
+            android:id="@+id/toppings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Toppings" />
+
+
+        <TextView
+            android:id="@+id/toppings_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            />
+
+        <CheckBox
+            android:id="@+id/cheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cheese"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Extra Cheese ($5)" />
+
+        <CheckBox
+            android:id="@+id/delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deliver"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Include Delivery ($5)" />
+
+
+        <EditText
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Special Instructions"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.407"
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:maxLength="60"
+            android:hint="Address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:digits="0123456789+"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

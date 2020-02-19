@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">foodDelivery</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+
+    <string-array name="topping_list">
+        <item>Mushroom ($5)</item>
+        <item>Sun dried Tomatoes ($5)</item>
+        <item>Chicken ($7)</item>
+        <item>Ground Beef ($8)</item>
+        <item>Shrimps ($10)</item>
+        <item>Pineapple ($5)</item>
+        <item>Avocado ($5)</item>
+        <item>Tuna ($5)</item>
+        <item>Broccoli ($8)</item>
+        <item>Olives ($8)</item>
+    </string-array>
+</resources>
